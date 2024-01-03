@@ -1,0 +1,17 @@
+[debug] [2024-01-03T22:27:45.564Z] ----------------------------------------------------------------------
+[debug] [2024-01-03T22:27:46.491Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mouaf\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-01-03T22:27:46.492Z] CLI Version:   13.0.2
+[debug] [2024-01-03T22:27:46.492Z] Platform:      win32
+[debug] [2024-01-03T22:27:46.492Z] Node Version:  v20.9.0
+[debug] [2024-01-03T22:27:46.493Z] Time:          Wed Jan 03 2024 23:27:46 GMT+0100 (heure normale d’Afrique de l’Ouest)
+[debug] [2024-01-03T22:27:46.493Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-03T22:27:46.952Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-03T22:27:46.953Z] > authorizing via signed-in user (tiojioromain02@gmail.com)
+[debug] [2024-01-03T22:27:46.953Z] [iam] checking project redaper-33254 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-03T22:27:46.960Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/redaper-33254:testIamPermissions [none]
+[debug] [2024-01-03T22:27:46.961Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/redaper-33254:testIamPermissions x-goog-quota-user=projects/redaper-33254
+[debug] [2024-01-03T22:27:46.962Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/redaper-33254:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-03T22:28:00.996Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/redaper-33254:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/redaper-33254:testIamPermissions failed, reason: socket hang up
+[debug] [2024-01-03T22:28:00.997Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/redaper-33254:testIamPermissions
+[debug] [2024-01-03T22:28:01.000Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/redaper-33254 [none]
